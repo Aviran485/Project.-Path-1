@@ -1,0 +1,260 @@
+/* ========== Global Styles ========== */
+/* Resets margins and paddings for a clean layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Sets the background color for the entire site */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* ========== Main App Layout ========== */
+/* Ensures the app takes the full height and is flexible */
+.appClass {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ========== Header & Navigation ========== */
+/* Styles the header with a blue background and white text */
+header {
+  background: #007bff;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image below Welcome to Animal Welfare App */
+.circular-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  margin-top: 10px;
+}
+
+/* ========== Global Styles ========== */
+/* Resets margins and paddings for a clean layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Sets the background color for the entire site */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* ========== Main App Layout ========== */
+/* Ensures the app takes the full height and is flexible */
+.appClass {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ========== Header & Navigation ========== */
+/* Styles the header with a blue background and white text */
+header {
+  background: #007bff;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image below Welcome to Animal Welfare App */
+.circular-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  margin-top: 10px;
+}
+
+/* Center Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #639cf8, #2ad3f1);
+  padding: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul .nav-item {
+  display: inline;
+}
+
+nav ul .nav-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul .nav-item a:hover {
+  color: #ffdd57;
+  background: rgba(255, 255, 255, 0.5);
+  border-color: #ffdd57;
+}
+
+
+/* ========== Home Page ========== */
+/* Styles the main content section in Home.jsx */
+.main {
+  flex-grow: 1;
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+/* ========== Article Cards in Home.jsx ========== */
+.articles-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.article-card {
+  width: 280px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.article-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.article-card h2 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.article-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ========== Report Form ========== */
+/* Styles the form inside ReportForm.js */
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* ========== Report List ========== */
+/* Styles the report list inside ReportList.js */
+.report-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+
+.report-item {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.report-item strong {
+  color: #007bff;
+  font-size: 14px;
+}
+
+/* Smaller Edit Button aligned to the side in ReportList.js */
+.report-item .edit-btn {
+  width: auto;
+  padding: 2px 6px;
+  font-size: 10px;
+  background: #ffc107;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+  text-align: center;
+}
+
+.report-item .edit-btn:hover {
+  background: #e0a800;
+}
+
+/* ========== Footer ========== */
+/* Styles the footer inside Footer.jsx */
+.divFooter {
+  text-align: center;
+  padding: 15px;
+  background: #007bff;
+  color: white;
+  margin-top: auto;
+}
